@@ -19,13 +19,12 @@
 				<groupId>@project.groupId@</groupId>
 				<artifactId>@project.artifactId@</artifactId>
 				<version>@project.version@</version>
+				
 				<executions>
 					<execution>
 						<id>build</id>
-						<phase>validate</phase>
+						<phase>pre-integration-test</phase>
 						<goals>
-							<!-- <goal>touch</goal> -->
-
 							<goal>build</goal>
 						</goals>
 					</execution>
