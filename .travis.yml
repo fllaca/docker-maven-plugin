@@ -1,0 +1,11 @@
+language: java
+sudo: false
+
+services:
+  - docker
+  
+jdk:
+  - oraclejdk8
+script: mvn clean verify -P run-its
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
