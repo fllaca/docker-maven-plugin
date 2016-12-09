@@ -1,3 +1,0 @@
-FROM alpine
-
-ADD simple-it-${project.version}.jar /code/
