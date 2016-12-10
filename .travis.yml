@@ -6,6 +6,11 @@ services:
   
 jdk:
   - oraclejdk8
+
+before_script:
+- export MAVEN_SKIP_RC=true
+
 script: mvn clean verify -P run-its
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
