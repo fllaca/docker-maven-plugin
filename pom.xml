@@ -139,6 +139,9 @@
 						<configuration>
 							<dataFile>${project.build.directory}/jacoco-it.exec</dataFile>
 							<outputDirectory>${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
+							<excludes>
+						        <exclude>com/codedpoetry/maven/dockerplugin/HelpMojo.*</exclude>
+						    </excludes>
 						</configuration>
 					</execution>
 				</executions>
